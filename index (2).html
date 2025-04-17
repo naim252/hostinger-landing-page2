@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Easy Checkout - Amazon Deal</title>
+
+  <!-- ✅ Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-10JRRNWH77"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-10JRRNWH77');
+  </script>
+
+  <!-- ✅ Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "r4nm39f1xd");
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f3f3;
+      color: #232f3e;
+    }
+    header {
+      background-color: #232f3e;
+      color: white;
+      padding: 20px 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .banner {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    .container {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .container h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .container p {
+      font-size: 18px;
+      color: #555;
+    }
+    .cta-btn {
+      margin-top: 20px;
+      background-color: #ff9900;
+      color: #111;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .cta-btn:hover {
+      background-color: #e68a00;
+    }
+    footer {
+      margin-top: 60px;
+      background-color: #232f3e;
+      color: white;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Easy Checkout</h1>
+    <p>Your Shortcut to the Best Amazon Deals</p>
+  </header>
+
+  <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437e1?fit=crop&w=1200&q=80" alt="Deals Banner" class="banner" />
+
+  <div class="container">
+    <h2>🔥 Limited Time Offer on Amazon!</h2>
+    <p>Click the button below to unlock this exclusive deal now.</p>
+    <button class="cta-btn" onclick="redirectToAmazon()">View Deal on Amazon</button>
+  </div>
+
+  <footer>
+    <p>© 2025 Easy Checkout. As an Amazon Associate, we earn from qualifying purchases.</p>
+  </footer>
+
+  <script>
+    function redirectToAmazon() {
+      gtag('event', 'click', {
+        'event_category': 'Affiliate',
+        'event_label': 'Amazon Redirect'
+      });
+      setTimeout(() => {
+        window.location.href = "https://amzn.to/3Ev0CuP";
+      }, 300);
+    }
+  </script>
+
+</body>
+</html>
